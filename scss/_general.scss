@@ -8,19 +8,10 @@ html {
     box-sizing: inherit;
 }
 
-:root {
-    --title-text-color: #212121;
-    --main-color-text: #757575;
-    --secondary-color-text: #2196F3;
-    --body-color-basic: #FFFFFF;
-    --button-background: rgba(245, 244, 250, 1);
-    --icon-color: rgba(175, 177, 184, 1);
-}
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--body-color-basic);
-    color: var(--title-text-color);
+    background-color: $body-color;
+    color: $title-text-color;
     font-size: 14px;
 
 }
@@ -53,12 +44,16 @@ body {
     margin: 0 auto;
 }
 
-image,
-a {
-    display: block;
-}
+// image,
+// a {
+//     display: block;
+// }
 
 ul {
     margin: 0;
     list-style: none;
+}
+
+img {
+    display: block;
 }

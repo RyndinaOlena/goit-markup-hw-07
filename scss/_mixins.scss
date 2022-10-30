@@ -1,5 +1,5 @@
-@mixin set-transition ($property...) {
+@mixin transition($prop...) {
     transition-duration: 250ms;
-    transition-property: $property;
+    transition-property: $prop;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
