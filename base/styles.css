@@ -704,11 +704,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
-  Letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   transition-duration: 250ms;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .footer__wrapper {
@@ -734,7 +733,7 @@ img {
   margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
@@ -913,7 +912,7 @@ img {
   display: block;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--body-color-basic);
   background-color: var(--secondary-color-text);
@@ -948,7 +947,7 @@ img {
   margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
@@ -981,7 +980,7 @@ img {
   height: 50px;
   margin: 10px;
   padding: 10px 28px;
-  line-height: 1, 9;
+  line-height: 1.9;
   letter-spacing: 0.06em;
   color: white;
 

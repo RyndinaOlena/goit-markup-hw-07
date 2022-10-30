@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.white {
-  color: var(--body-color-basic);
-}
-
 html {
   box-sizing: border-box;
 }
@@ -229,7 +225,7 @@ img {
   margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -250,7 +246,7 @@ img {
   margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -263,16 +259,22 @@ img {
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
-  padding-left: 16px;
+  text-indent: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 .filing__input::-moz-placeholder {
+  padding: 0;
+  text-indent: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 .filing__input:-ms-input-placeholder {
+  padding: 0;
+  text-indent: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 .filing__input::placeholder {
+  padding: 0;
+  text-indent: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 .filing__btn {
@@ -280,7 +282,7 @@ img {
   height: 50px;
   margin: 10px;
   padding: 10px 28px;
-  line-height: 1, 9;
+  line-height: 1.9;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   cursor: pointer;
@@ -503,7 +505,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
   transition-duration: 250ms;
-  transition-property: background-color;
+  transition-property: background-color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .apps:last-child {
@@ -512,7 +514,7 @@ img {
 .apps:hover, .apps:focus {
   background-color: #2196F3;
 }
-.apps:hover .team__application .apps:focus .team__application {
+.apps:hover .team__application, .apps:focus .team__application {
   fill: #FFFFFF;
 }
 
@@ -706,7 +708,7 @@ img {
   display: block;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   background-color: #2196F3;
@@ -724,74 +726,6 @@ img {
   resize: none;
   width: 448px;
   height: 120px;
-}
-
-.filing {
-  display: block;
-  margin-left: 93px;
-  padding: 0;
-}
-.filing__item {
-  margin: 0 0 20px 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-}
-.filing__footer {
-  padding: 0;
-}
-.filing__input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  border: none;
-  background-color: #2F303A;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 4px;
-}
-.filing__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-}
-.filing__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-}
-.filing__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-}
-.filing__btn {
-  width: 200px;
-  height: 50px;
-  margin: 10px;
-  padding: 10px 28px;
-  line-height: 1, 9;
-  letter-spacing: 0.06em;
-  color: white;
-  background-color: #2196F3;
-  border: transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: 250ms bacground-color cubic-bezier(0.4, 0, 0.2, 1);
-}
-.filing__text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: #FFFFFF;
-}
-.filing__icon {
-  vertical-align: bottom;
-  margin-left: 10px;
-  fill: #FFFFFF;
-  width: 24px;
-  height: 24px;
 }
 
 /* чекбокс! */
@@ -814,13 +748,15 @@ img {
 }
 .custom__checkbox__icon {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 2px solid #212121;
 }
 .custom__checkbox__svg {
-  display: block;
   width: 11px;
   height: 8px;
 }
