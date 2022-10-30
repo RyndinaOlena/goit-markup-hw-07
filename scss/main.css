@@ -214,7 +214,7 @@ img {
   padding: 0;
   justify-content: space-between;
   line-height: 1.2;
-  color: var(--title-text-color);
+  color: #212121;
   list-style: none;
 }
 .work__title {
@@ -226,7 +226,7 @@ img {
 }
 .work__text {
   line-height: 1.71;
-  color: var(--main-color-text);
+  color: #757575;
   letter-spacing: 0.03em;
   padding: 0;
   margin: 10px 0 0 0;
@@ -239,7 +239,7 @@ img {
   margin-bottom: 30px;
   border-radius: 4px;
   min-height: 120px;
-  background-color: var(--button-background);
+  background-color: rgb(245, 244, 250);
 }
 .work__icon {
   width: 70px;
@@ -257,17 +257,17 @@ img {
   color: #212121;
   letter-spacing: 0.03em;
 }
-.examples__title__list {
+.examples__list {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.examples__title__item {
+.examples__item {
   position: relative;
 }
-.examples__title__text {
+.examples__text {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -284,7 +284,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
   color: #FFFFFF;
 }
-.examples__title__list li:last-child {
+.examples__list li:last-child {
   margin-right: 0;
 }
 
@@ -318,7 +318,7 @@ img {
   margin-right: 0;
 }
 .team__application {
-  fill: var(--icon-color);
+  fill: rgb(175, 177, 184);
   width: 20px;
   height: 20px;
 }
@@ -348,7 +348,7 @@ img {
 }
 
 .apps.social__apps .team__application {
-  fill: var(--body-color-basic);
+  fill: #FFFFFF;
 }
 
 .apps {
