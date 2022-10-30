@@ -5,18 +5,17 @@
     margin-bottom: 50px;
 
     &__button {
-        background-color: var(--button-background);
+        background-color: $button-background;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
-        color: var(--title-text-color);
+        color: $title-text-color;
         border-radius: 4px;
         border: none;
         font-family: inherit;
         letter-spacing: 0.03em;
         padding: 6px 25px;
         height: 38px;
-        border-radius: 4px;
 
         @include transition(color,
             background-color,

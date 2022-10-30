@@ -830,4 +830,101 @@ img {
 }
 .custom__checkbox__input:checked + .custom__checkbox__label .custom__checkbox__svg {
   opacity: 1;
+}
+
+.filter {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter__button {
+  background-color: rgb(245, 244, 250);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212121;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  padding: 6px 25px;
+  height: 38px;
+  transition-duration: 250ms;
+  transition-property: color, background-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter__button:hover, .filter__button:focus {
+  background-color: #2196F3;
+  color: rgb(245, 244, 250);
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+.card__descr {
+  padding: 20px 24px;
+}
+.card__title {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 2px;
+  color: #212121;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+.card__item {
+  display: block;
+  box-shadow: 0 0 1px #888;
+  text-decoration: none;
+}
+.card__item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.card__text {
+  position: relative;
+  overflow: hidden;
+}
+.card__img {
+  margin: 0;
+  display: block;
+}
+.card__offers {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0 24px;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(101%);
+}
+.card__item:hover .card__offers, .card__item:focus .card__offers {
+  transform: translateY(0);
+}
+.card__menu {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #757575;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=main.css.map */
