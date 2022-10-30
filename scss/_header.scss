@@ -60,7 +60,7 @@
     letter-spacing: 0.02em;
     @include transition(color);
 
-    &.header__link--active::after {
+    &.active::after {
         content: '';
         position: absolute;
         left: 0;
@@ -70,7 +70,7 @@
         width: 100%;
         height: 4px;
         border-radius: 2px;
-        background-color: var(--secondary-color-text);
+        background-color: $hover-color;
 
     }
 
