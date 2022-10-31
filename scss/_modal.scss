@@ -90,6 +90,8 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -199,6 +201,8 @@
         align-items: center;
         gap: 7px;
         margin-left: 14px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     &__link {
@@ -233,5 +237,11 @@
     &__input:checked+&__label &__svg {
         opacity: 1;
 
+    }
+
+    &__text {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(117, 117, 117, 1);
     }
 }

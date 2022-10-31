@@ -647,6 +647,8 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .form__title {
@@ -739,6 +741,8 @@ img {
   align-items: center;
   gap: 7px;
   margin-left: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .custom__checkbox__link {
   color: #2196F3;
@@ -766,6 +770,11 @@ img {
 }
 .custom__checkbox__input:checked + .custom__checkbox__label .custom__checkbox__svg {
   opacity: 1;
+}
+.custom__checkbox__text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
 }
 
 .filter {

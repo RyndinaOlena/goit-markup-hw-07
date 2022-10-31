@@ -1012,10 +1012,16 @@ img {
 
 
 /* чекбокс! */
+.custom__checkbox__label {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .checkbox__input {
   position: absolute;
   opacity: 0;
   z-index: -1;
+
 }
 
 .costom__checkbox {
@@ -1035,6 +1041,7 @@ img {
   align-items: center;
   gap: 7px;
   margin-left: 14px;
+
 }
 
 
